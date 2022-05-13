@@ -31,10 +31,16 @@ tracker.start();
 function App() {
 
   let [activity, setActivity]  = useState(null)
+  let [notified, setNotified] = useState(false)
+
   let {isAuthenticated} = useAuth0()
 
+
   if(isAuthenticated) {
-    tracker.event('user_logged_in', userId)
+    if(!notified) {
+      tracker.event('user_logged_in', userId)
+      setNotified(true)
+    }
     return (
       <div className="App">
         <header className="App-header">
