@@ -4,8 +4,7 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.10.1",
-    "@openreplay/tracker": "^3.5.4",
-    "@openreplay/tracker-fetch": "^3.5.3",
+    "@openreplay/tracker": "^4.1.9-beta.4",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
